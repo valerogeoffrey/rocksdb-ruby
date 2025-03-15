@@ -22,6 +22,10 @@ module RocksDB
     def open_readonly(db_path, db_options = "")
       ::RocksDB::DB.new(db_path, db_options, readonly: true)
     end
+
+    def TRY_GV_FORK
+      puts 'You are using My fork buddy !'
+    end
   end
 
   class DB
